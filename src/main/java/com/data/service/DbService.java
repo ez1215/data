@@ -16,4 +16,8 @@ public class DbService {
     public List<Db> getDbList(){
         return dbMapper.getDbList();
     }
+
+    public Db getById(String id){
+        return dbMapper.getById(id);
+    }
 }
