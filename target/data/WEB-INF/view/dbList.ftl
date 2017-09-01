@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>数据库列表</title>
+</head>
+<body>
+<table>
+    <thead>
+        <th>序号</th>
+        <th>url</th>
+        <th>用户</th>
+        <th>密码</th>
+        <th>数据库名</th>
+    </thead>
+    <tbody>
+    <#if list??>
+        <#list list as list>
+        <tr>
+            <td>${list.id}</td>
+            <td>${list.url}</td>
+            <td>${list.userName}</td>
+            <td>${list.passWord}</td>
+            <td>${list.dbName}</td>
+        </tr>
+        </#list>
+    </#if>
+    </tbody>
+</table>
+</body>
+</html>
